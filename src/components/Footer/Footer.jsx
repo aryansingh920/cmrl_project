@@ -366,10 +366,10 @@ const Footer = () => {
           </a>
         </li>
         <li>
-        <a onClick={scrollToTestDiv} href='HomeAdmin'>Admin</a>
+        <a onClick={scrollToTestDiv} href='#/HomeAdmin'>Admin</a>
         </li>
         <li>
-        <a onClick={scrollToTestDiv} href='/'>Home</a>
+        <a onClick={scrollToTestDiv} href='/#'>Home</a>
         </li>
       </ul>
     </div>
