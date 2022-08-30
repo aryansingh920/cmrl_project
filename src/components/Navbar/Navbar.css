@@ -1,0 +1,481 @@
+@font-face {
+    font-family: 'HelveticaCE-CondBold';
+    src: url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-CondBold.eot?#iefix') format('embedded-opentype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-CondBold.otf') format('opentype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-CondBold.woff') format('woff'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-CondBold.ttf') format('truetype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-CondBold.svg#HelveticaCE-CondBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaCE-Cond';
+    src: url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.eot?#iefix') format('embedded-opentype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.otf') format('opentype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.woff') format('woff'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.ttf') format('truetype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.svg#HelveticaCE-Cond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaCE';
+    src: url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.eot?#iefix') format('embedded-opentype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.otf') format('opentype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.woff') format('woff'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.ttf') format('truetype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.svg#HelveticaCE') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+@media all {
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+body {
+    background: white;
+    font: 14px/1.4 Georgia, Serif;
+}
+@media all {
+    body {
+        margin: 0;
+        background-color: #fff;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background: #DDE8FC;
+    }
+}
+
+body {
+    height: 340px;
+    margin: 0;
+    padding: 0;
+}
+@media all {
+    html {
+        font-family: sans-serif;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        font-size: 10px;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+html {
+    height: 340px;
+    margin: 0;
+    padding: 0;
+}
+@media all {
+    header {
+        display: block;
+        background: #fff;
+    }
+}
+@media all {
+    *,
+    :after,
+    :before,
+    input[type="checkbox"],
+    input[type="radio"] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+}
+@media all {
+    *,
+    :after,
+    :before {
+        box-sizing: border-box;
+    }
+}
+@media all {
+    section {
+        display: block;
+    }
+}
+@media all {
+    .head_bg {
+        background-color: #4C62B8;
+        min-height: 55px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media all {
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media all {
+    .container {
+        width: 1270px;
+    }
+}
+@media all {
+    .btn-group:after,
+    .btn-group:before,
+    .btn-toolbar:after,
+    .btn-toolbar:before,
+    .clearfix:after,
+    .clearfix:before,
+    .container-fluid:after,
+    .container-fluid:before,
+    .container:after,
+    .container:before,
+    .form-group:after,
+    .form-group:before,
+    .modal-footer:after,
+    .modal-footer:before,
+    .nav:after,
+    .nav:before,
+    .navbar-collapse:after,
+    .navbar-collapse:before,
+    .navbar-header:after,
+    .navbar-header:before,
+    .navbar:after,
+    .navbar:before,
+    .pager:after,
+    .pager:before,
+    .panel-body:after,
+    .panel-body:before,
+    .row:after,
+    .row:before,
+    dd:after,
+    dd:before {
+        display: table;
+        content: " ";
+    }
+}
+@media all {
+    .btn-group:after,
+    .btn-toolbar:after,
+    .clearfix:after,
+    .container-fluid:after,
+    .container:after,
+    .form-group:after,
+    .modal-footer:after,
+    .nav:after,
+    .navbar-collapse:after,
+    .navbar-header:after,
+    .navbar:after,
+    .pager:after,
+    .panel-body:after,
+    .row:after,
+    dd:after {
+        clear: both;
+    }
+}
+@media all {
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+@media all {
+    .col-xs-12 {
+        float: left;
+    }
+}
+@media all {
+    .col-lg-3,
+    .col-md-3,
+    .col-sm-3,
+    .col-xs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media all {
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .col-sm-3 {
+        float: left;
+        width: 25%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-3 {
+        float: left;
+        width: 25%;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-3 {
+        float: left;
+        width: 25%;
+    }
+}
+@media all {
+    .col-lg-6,
+    .col-md-6,
+    .col-sm-6,
+    .col-xs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 768px) {
+    .col-sm-6 {
+        float: left;
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-6 {
+        float: left;
+        width: 50%;
+    }
+}
+@media all {
+    .col-xs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none!important;
+    }
+}
+@media all {
+    .col-lg-12,
+    .col-md-12,
+    .col-sm-12,
+    .col-xs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 768px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-12 {
+        float: left;
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-12 {
+        float: left;
+        width: 100%;
+    }
+}
+@media all {
+    img {
+        vertical-align: middle;
+        border: 0;
+    }
+}
+@media all {
+    .ind-logo img {
+        margin-top: 12px;
+    }
+}
+@media all {
+    a {
+        background-color: transparent;
+        color: #337ab7;
+        text-decoration: none;
+    }
+}
+@media all {
+    .logo,
+    a {
+        text-decoration: none!important;
+    }
+}
+@media all {
+    .logo {
+        background: url("https://chennaimetrorail.org/wp-content/themes/CMRL/images/cmrl-logo.png") center center no-repeat hsla(0,0%,0%,0);
+        display: block;
+        height: 87px;
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 30px;
+        background-image: url("https://chennaimetrorail.org/wp-content/themes/CMRL/images/cmrl-logo.png");
+        background-position-x: center;
+        background-position-y: center;
+        background-size: initial;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+@media all {
+    a:active,
+    a:hover {
+        outline: 0;
+    }
+}
+@media all {
+    a:hover {
+        color: #23527c;
+        text-decoration: underline;
+    }
+}
+@media all {
+    .tn-logo img {
+        margin-top: 12px;
+        float: right;
+    }
+}
+
+h1 {
+    font-weight: normal;
+    margin: 0 0 10px;
+
+}
+@media all {
+    h1 {
+        overflow-wrap: break-word;
+        margin: 0;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        color: inherit;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 36px;
+        padding: 0;
+    }
+}
+
+ul {
+    margin: 0 0 10px;
+}
+@media all {
+    ul {
+        overflow-wrap: break-word;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+@media all {
+    .list-social {
+        float: right;
+        margin: 0 0 5px;
+    }
+}
+
+.list-social {
+    float: right;
+    margin: 8px 0 5px !important;
+}
+@media all {
+    .logo h1 {
+        text-transform: uppercase;
+        color: #00f;
+        font-family: HelveticaCE-CondBold,sans-serif;
+        font-size: 23px;
+        font-weight: 400;
+        padding-top: 3.8em;
+        text-align: center;
+    }
+}
+@media all {
+    .list-social > li {
+        float: left;
+        list-style: none;
+        margin-left: 15px;
+    }
+}
+@media all {
+    .textzoomer {
+        float: right;
+        margin-top: 12%;
+    }
+}
+@media all {
+    .topheader {
+        margin-top: 9px;
+    }
+}
+@media all {
+    ul ul {
+        margin-bottom: 0;
+    }
+}
+@media all {
+    .topheader li {
+        float: left;
+        list-style: none;
+        margin-right: 10px;
+    }
+}
+@media all {
+    .topheader li:after {
+        color: #fff;
+        content: "|";
+    }
+}
+.topheader li:after {
+    color: #fff;
+    content: "|";
+    top: -2px;
+    position: relative;
+}
+@media all {
+    .topheader li:last-child:after {
+        content: "";
+    }
+}
+@media all {
+    a {
+        text-decoration: none!important;
+    }
+}
+@media all {
+    .topheader li a {
+        text-transform: uppercase;
+        font-family: HelveticaCE-Cond,sans-serif;
+        font-size: 13px;
+        margin-right: 8px;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        color: #fff;
+    }
+}
+@media all {
+    .topheader li a:hover {
+        color: #000;
+    }
+}

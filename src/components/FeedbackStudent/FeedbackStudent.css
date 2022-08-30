@@ -1,0 +1,119 @@
+.main-container{
+    /* height:100%;
+    width:100%; */
+    /* margin-bottom: 10rem; */
+}
+.uk-card{
+    /* background-color: #DDE8FC; */
+    background-color: white;
+}
+.form{
+    background-color:#DDE8FC ;
+}
+.feedback{
+    margin-left: 3rem;
+    padding-top:2rem;
+}
+.name{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    /* margin-bottom: 1.5rem; */
+}
+.name label{
+    margin-right: 3rem;
+}
+
+.gender{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-top:2rem;
+}
+.gender label{
+    margin-right:3rem;
+}
+.input{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-top:2rem;
+}
+.input input{
+    margin-right:2rem;
+    margin-left:2rem;
+}
+.submit button{
+    margin-top: 3rem;
+    margin-bottom:3rem;
+}
+
+.b{
+    font-weight: bold;
+}
+
+.size{
+    margin-top:10px;
+}
+
+.suggestion{
+    width: 400px;
+    height:200px;
+}
+
+.button-submit-feedback{
+    background-color: #1976d2;
+    width: 80px;
+    height: 30px;
+    margin-left: -1150px;
+    
+}
+
+.uk-card-title{
+    font-size:2.5rem;
+}
+
+.heading4{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.metro{
+    display: flex;
+    margin-top:2px;
+}
+
+.feedback{
+    background-color: rgb(166, 166, 246);
+    border-radius: 2%;
+    margin-right:3rem;
+}
+
+.bg-card{
+    background-color: #DDE8FC;
+    padding: 1rem;
+    border: 2px hidden grey;
+    margin-left:20px;
+    margin-right:20px;
+    /* border-radius:2%; */
+    
+}
+
+.name:hover{
+    border: 0.5rem solid white;
+    transition: 0.5s;
+    /* box-shadow: 3px 10px black; */
+    /* transition: all 0.2s ease-in-out; */
+}
+
+.gender:hover {
+    border: 0.5rem solid white;
+    transition: 0.5s;
+}
+.rate{
+    display:flex;
+}
+.rate h4{
+    margin-right:2rem;
+}

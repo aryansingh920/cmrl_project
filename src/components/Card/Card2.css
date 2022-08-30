@@ -1,0 +1,63 @@
+.cred{
+    margin-bottom: 25px
+}
+
+.email, .password, .captcha{
+    margin:6px;
+    padding: 4px 4px;
+}
+.email-main2{
+  padding: 4px 4px;
+  margin:6px;
+  margin-bottom:-2rem;
+}
+.password{
+    margin-left:8px;
+}
+
+.captcha{
+    margin-left:13px;
+}
+
+
+
+.captcha-img{
+    margin-top:1px;   
+    width:35%;
+}
+.otp{
+    margin-top:-2rem; 
+    margin-left:5rem;
+
+}
+
+.submit{
+    margin-top:-40px;
+    margin-left:9rem;
+
+}
+.justify-content-center label{
+     font-weight: 600;
+}
+.style-demo{
+    height:500px;
+    width:500px;  
+}
+.send{
+    /* background: aliceblue; */
+    margin-right: 6rem;
+}
+.verify{
+    background-color: aliceblue;
+    margin-right:-3rem;
+    
+    
+}
+
+
+/* .button, .input, .optgroup, .select, .textarea {
+    margin: 14px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+} */

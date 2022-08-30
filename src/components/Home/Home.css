@@ -1,0 +1,13 @@
+body {
+    background: url("https://chennaimetrorail.org/wp-content/uploads/2021/03/cmrl-banner-53217.png") ; 
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    min-height: 1500px;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    /* height: auto; */
+}

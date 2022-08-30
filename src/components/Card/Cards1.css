@@ -1,0 +1,46 @@
+.uk-card-hover {
+    background: rgba( 74, 144, 226, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.uk-card {
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
+    height: 289px;
+}
+
+div{
+    text-align: center;
+}
+
+/* .qrcode{
+    width: 180px;
+    height: 180px;
+    display:flex;
+    flex-direction: row;
+    flex:50%;
+}
+
+.msg{
+    display: flex;
+    flex:50%;
+} */
+
+.mobile_button, .username_button{
+    margin-top:70px;
+}
+
+.msg{
+    margin-top:50px;
+}
+.uk-card-title{
+    text-transform: uppercase;
+}

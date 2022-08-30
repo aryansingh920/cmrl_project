@@ -1,0 +1,79 @@
+.main-container{
+    /* height:100%;
+    width:100%; */
+    /* margin-bottom: 10rem; */
+}
+.uk-card{
+    /* background-color: #DDE8FC; */
+    background-color: white;
+}
+.form{
+    background-color:#DDE8FC ;
+}
+.feedback{
+    margin-left: 3rem;
+    padding-top:2rem;
+}
+.name{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    /* margin-bottom: 1.5rem; */
+}
+.name label{
+    margin-right: 3rem;
+}
+
+.gender{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-top:2rem;
+}
+.gender label{
+    margin-right:3rem;
+}
+.input{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-top:2rem;
+}
+.input input{
+    margin-right:2rem;
+    margin-left:2rem;
+}
+.submit button{
+    margin-top: 3rem;
+    margin-bottom:3rem;
+}
+
+.b{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+input[type="radio"] {
+    /* margin-right: 1rem; */
+    margin: 0.5rem;
+}
+
+.size{
+    margin-top:10px;
+}
+
+.suggestion{
+    width: 400px;
+    height:200px;
+}
+
+.button-submit-feedback{
+    background-color: #1976d2;
+    width: 80px;
+    height: 30px;
+    margin-left: -1150px;
+}
+
+.uk-card-title{
+    font-size:2.5rem;
+}

@@ -1,0 +1,269 @@
+* { 
+  margin: 0; 
+  padding: 0;
+} 
+.chennaimetro{
+  height:100%;
+  width:100%;
+}
+
+.main{
+margin:10px;
+}
+@media all{ 
+* { 
+  -webkit-box-sizing:  border-box; 
+  -moz-box-sizing:  border-box;
+  box-sizing: border-box;
+} 
+}     
+
+@media all{ 
+.form-group { 
+  margin-bottom: 15px;
+} 
+}     
+
+@media (min-width: 768px){ 
+.form-inline .form-group { 
+  display:  inline-block;
+  margin-bottom: 0; 
+  vertical-align: middle;
+} 
+}     
+
+.plan { 
+  display: flex; 
+  margin-bottom: 15px;
+} 
+
+@media all{ 
+.Tile-section-2 .form-inline { 
+  background: #eee; 
+  border: 1px solid #ddd; 
+  padding: 15px 10px;
+} 
+}     
+
+@media all{ 
+.col-xs-12 { 
+  float: left;
+} 
+}     
+
+@media all{ 
+.col-lg-8,.col-md-8,.col-sm-12,.col-xs-12 { 
+  position: relative; 
+  min-height: 1px; 
+  padding-right: 15px; 
+  padding-left: 15px;
+} 
+}     
+
+@media all{ 
+.col-xs-12 { 
+  /* width: 100%; */
+} 
+}     
+
+@media (min-width: 768px){ 
+.col-sm-12 { 
+  float:  left;
+  width: 100%;
+} 
+}     
+
+@media (min-width: 992px){ 
+.col-md-8 { 
+  float:  left;
+  width: 66.66666667%;
+} 
+}     
+
+@media (min-width: 1200px){ 
+.col-lg-8 { 
+  float:  left;
+  width: 66.66666667%;
+} 
+}     
+
+@media all{ 
+.row { 
+  margin-right: -15px; 
+  margin-left: -15px;
+} 
+}     
+
+@media (min-width: 768px){ 
+.container { 
+  width: 750px;
+} 
+}     
+
+@media all{ 
+.container { 
+  margin-right:  auto; 
+  margin-left:  auto;
+  padding-right: 15px; 
+  padding-left: 15px;
+} 
+}     
+
+@media (min-width: 992px){ 
+.container { 
+  width: 970px;
+} 
+}     
+
+@media (min-width: 1200px){ 
+.container { 
+  width: 1170px;
+} 
+}     
+
+@media all{ 
+.container { 
+  width: 1270px;
+} 
+}     
+
+@media all{ 
+section { 
+  display: block;
+} 
+}     
+
+@media all{ 
+.Tile-section-2 { 
+  margin-top: 2em;
+} 
+}     
+
+.Tile-section-2 { 
+  margin-top: 0.5em !important;
+} 
+
+body { 
+  background:  white; 
+  font:  14px/1.4 Georgia, Serif;
+} 
+
+@media all{ 
+body { 
+  margin:    0;
+  background-color:   #fff;
+  font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif; 
+  font-size:  14px; 
+  line-height:  1.42857143; 
+  color:  #333;
+  background: #DDE8FC;
+} 
+}     
+
+body { 
+  height: 340px; 
+  margin: 0px; 
+  padding: 0px;
+} 
+
+@media all{ 
+html { 
+  font-family:  sans-serif; 
+  -webkit-text-size-adjust:  100%; 
+  -ms-text-size-adjust:  100%;
+  font-size: 10px; 
+  -webkit-tap-highlight-color: transparent;
+} 
+}     
+
+html { 
+  height: 340px; 
+  margin: 0px; 
+  padding: 0px;
+} 
+
+@media all{ 
+select { 
+  margin:   0; 
+  font:   inherit; 
+  color:   inherit;
+  text-transform:  none;
+  font-family: inherit; 
+  font-size: inherit; 
+  line-height: inherit;
+} 
+}     
+
+@media all{ 
+.form-control { 
+  background-image:   none;
+  font-size:  14px; 
+  line-height:  1.42857143; 
+  color:  #555; 
+  display:  block;
+  width: 100%; 
+  height: 34px; 
+  padding: 6px 12px; 
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); 
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075); 
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; 
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; 
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+} 
+}     
+
+@media all{ 
+.form-control:focus { 
+  border-color: #66afe9; 
+  outline: 0; 
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6); 
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+} 
+}     
+
+@media (min-width: 768px){ 
+.form-control  { 
+  display: inline-block; 
+  width: auto; 
+  vertical-align: middle;
+} 
+}     
+
+@media all{ 
+.form-control  { 
+  background-color:  rgb(236, 231, 231); 
+  background-image:  none; 
+  border:  1px solid #ccc; 
+  border-radius:  0; 
+  box-shadow:  0 1px 1px rgba(0,0,0,.075) inset; 
+  color:  rgb(19, 19, 19); 
+  font-size:  14px; 
+  height:  34px; 
+  line-height:  1.42857; 
+  transition:  border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+  margin-right: 4px; 
+  padding: 5px 7px;
+} 
+}     
+
+@media all{ 
+*,:after,:before,input[type="checkbox"],input[type="radio"] { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+} 
+}     
+
+@media all{ 
+*,:after,:before { 
+  box-sizing: border-box;
+} 
+}     
+
+@media all{ 
+option { 
+  margin: 0 5px;
+} 
+}
