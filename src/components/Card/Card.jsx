@@ -4,7 +4,7 @@ import CaptchaC from "../CaptchaC";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import {useNavigate} from "react-router-dom"
+import {useNavigate,Navigate} from "react-router-dom"
 import { useCookies } from 'react-cookie';
 
 const Card = () => {
@@ -15,7 +15,7 @@ const Card = () => {
   const [msg,setmsg] = useState("");
 
   const navigate = useNavigate();
-
+//   let history = useHistory();
   const callBack = async () => {
 
     const result = await axios
@@ -23,7 +23,8 @@ const Card = () => {
       .then((res) => {
         if(res.data === "Authenticated"){
         setCookie('admin', "true", { path: '/' });
-        navigate("/admin")
+        navigate("admin")
+        // return <Navigate to="/admin" />
     }else if(res.data === "Wrong Password"){
         setmsg("Wrong Password")
     }else if(res.data === "Email not there in DB"){

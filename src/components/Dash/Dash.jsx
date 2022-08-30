@@ -19,7 +19,7 @@ const navigate = useNavigate();
         if(cookies.admin === "true") {
             console.log("User logged in")
         }else{
-            navigate("HomeAdmin")
+            navigate("homeadmin")
         }
 
     } ,[])

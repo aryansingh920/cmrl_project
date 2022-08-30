@@ -367,7 +367,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-        <a onClick={()=>{scrollToTestDiv();navigate("HomeAdmin")}}>Admin</a>
+        <a onClick={()=>{scrollToTestDiv();navigate("homeadmin")}}>Admin</a>
         </li>
         <li>
         <a onClick={()=>{scrollToTestDiv();navigate("/")}} >Home</a>

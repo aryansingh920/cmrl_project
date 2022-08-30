@@ -41,8 +41,8 @@ const App = () => {
           <Route path="feedback" element={<Feedback />} />
           <Route path="/feedback_student" element={<FeedbackStudent />} />
           <Route path="/thankYou" element={<ThankYou />} />
+          <Route path="/homeadmin" element={<HomeAdmin />} />
           <Route path="/admin" element={<Dash />} />
-          <Route path="/HomeAdmin" element={<HomeAdmin />} />
         </Routes>
       <Footer />
 
