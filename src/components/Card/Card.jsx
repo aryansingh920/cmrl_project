@@ -23,7 +23,7 @@ const Card = () => {
       .then((res) => {
         if(res.data === "Authenticated"){
         setCookie('admin', "true", { path: '/' });
-        navigate("../admin")
+        navigate("admin")
         // return <Navigate to="/admin" />
     }else if(res.data === "Wrong Password"){
         setmsg("Wrong Password")
