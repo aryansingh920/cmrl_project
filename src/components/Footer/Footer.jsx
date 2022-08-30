@@ -2,9 +2,10 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css'
 import Button from '@mui/material/Button'
-
+import {useNavigate} from "react-router-dom"
 
 const Footer = () => {
+  const navigate = useNavigate();
   function scrollToTestDiv(){
     const divElement = document.getElementById('topScrollElement12323');
     divElement.scrollIntoView({ behavior: 'smooth' });
@@ -366,10 +367,10 @@ const Footer = () => {
           </a>
         </li>
         <li>
-        <a onClick={scrollToTestDiv} href='/cmrl_project/#/HomeAdmin'>Admin</a>
+        <a onClick={()=>{scrollToTestDiv();navigate("HomeAdmin")}}>Admin</a>
         </li>
         <li>
-        <a onClick={scrollToTestDiv} href='/cmrl_project/#'>Home</a>
+        <a onClick={()=>{scrollToTestDiv();navigate("/")}} >Home</a>
         </li>
       </ul>
     </div>

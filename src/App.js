@@ -30,9 +30,10 @@ const App = () => {
 
   return (
     <div>
-      <Navbar />
 
 {      <HashRouter >
+  <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="redirect" element={<Redirect />} />
@@ -43,9 +44,10 @@ const App = () => {
           <Route path="/admin" element={<Dash />} />
           <Route path="/HomeAdmin" element={<HomeAdmin />} />
         </Routes>
+      <Footer />
+
       </HashRouter>}
       {/* <Dash /> */}
-      <Footer />
     </div>
   );
 };
