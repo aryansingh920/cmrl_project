@@ -43,6 +43,7 @@ const App = () => {
           <Route path="/thankYou" element={<ThankYou />} />
           <Route path="/homeadmin" element={<HomeAdmin />} />
           <Route path="/admin" element={<Dash />} />
+          <Route path="/homeadmin/admin" element={<Dash />} />
         </Routes>
       <Footer />
 
