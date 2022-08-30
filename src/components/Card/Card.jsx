@@ -19,7 +19,7 @@ const Card = () => {
   const callBack = async () => {
 
     const result = await axios
-      .post("#/admin", { email: email, password: password })
+      .post("/admin", { email: email, password: password })
       .then((res) => {
         if(res.data === "Authenticated"){
         setCookie('admin', "true", { path: '/' });
