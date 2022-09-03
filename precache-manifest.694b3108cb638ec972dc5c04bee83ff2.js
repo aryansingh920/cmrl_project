@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b1e5dda8ff1ebe75eba3",
+    "revision": "3b2f740403b4a445b3b9",
     "url": "/cmrl_project/static/css/main.f2e844eb.chunk.css"
   },
   {
-    "revision": "b1e5dda8ff1ebe75eba3",
-    "url": "/cmrl_project/static/js/main.b1e5dda8.chunk.js"
+    "revision": "3b2f740403b4a445b3b9",
+    "url": "/cmrl_project/static/js/main.3b2f7404.chunk.js"
   },
   {
     "revision": "56dbc343fe2dac40479d",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/cmrl_project/static/js/runtime~main.f09a56f3.js"
   },
   {
-    "revision": "d0c9bc83718ebc3a2a7d8fc314c69fad",
+    "revision": "9d242bd4296ebef68183bfab972aaf07",
     "url": "/cmrl_project/index.html"
   }
 ];
