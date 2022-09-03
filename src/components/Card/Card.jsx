@@ -42,41 +42,43 @@ const Card = () => {
 
   return (
     <div>
-      <div>
-        <div
-          style={{ textAlign: "center" }}
-          className="uk-card uk-card-default uk-card-hover uk-card-body p-5 "
-        >
-          <h2>Admin</h2>
-          <label>Email</label>
-          <input
-            value={email}
-            onChange={(e) => {
-              setemail(e.target.value);
-            }}
-            class="mobile"
-            type="text"
-            placeholder="Enter email"
-          ></input>
-          <br />
-          <label class="otp1">Password</label>
-          <input
-            class="otp"
-            type="password"
-            value={password}
-            onChange={(e) => {
-              setpassword(e.target.value);
-            }}
-            placeholder="Enter the password"
-          ></input>
-          <p>{msg}</p>
-            {<div className=" mobile_button">
-              <Button onClick={() => callBack()}variant="contained">Sign in</Button>
-            </div>}
-        </div>
+    <div>
+      <div
+        style={{ textAlign: "center" }}
+        className="uk-card uk-card-default uk-card-hover uk-card-body p-5 "
+      >
+        <h2>Admin</h2>
+        <label>Email {" "}</label>
+        <input
+          value={email}
+          onChange={(e) => {
+            setemail(e.target.value);
+          }}
+          class="mobile ms-5"
+          type="text"
+          placeholder="Enter email"
+        ></input>
+        <br />
+        <label class="otp1 password-style">Password</label>
+        <input
+          class="otp m-0 ms-3"
+          type="password"
+          value={password}
+          onChange={(e) => {
+            setpassword(e.target.value);
+          }}
+          placeholder="Enter the password"
+        ></input>
+        <p>{msg}</p>
+          {<div className=" mobile_button">
+            <Button onClick={() => callBack()}variant="contained">Sign in</Button>
+          </div>}
       </div>
     </div>
-  );
+  </div>
+);
 };
+
+// };
 
 export default Card;

@@ -9,8 +9,9 @@ import Station from "./components/Station/Station";
 // import ThankYou from "./components/ThankYou/ThankYou";
 import Feedback from "./components/Feedback/Feedback";
 import FeedbackStudent from "./components/FeedbackStudent/FeedbackStudent";
-
 import Dash from "./components/Dash/Dash";
+// import HomeAdmin from "./components/HomeAdmin/HomeAdmin";
+
 import "./App.css";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route,HashRouter  } from "react-router-dom";
@@ -43,7 +44,7 @@ const App = () => {
           <Route path="/thankYou" element={<ThankYou />} />
           <Route path="/homeadmin" element={<HomeAdmin />} />
           <Route path="/admin" element={<Dash />} />
-          <Route path="/homeadmin/admin" element={<Dash />} />
+          <Route path="/homeadmin/admin" element={<HomeAdmin />} />
         </Routes>
       <Footer />
 
