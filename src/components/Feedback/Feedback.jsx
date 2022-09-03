@@ -65,6 +65,10 @@ const Feedback = () => {
       safety !== ""
     ) {
         // console.log("gu")
+        const current = new Date()
+        const time = String(current.getHours()).padStart(2,0) + ':' + String(current.getMinutes()).padStart(2,0) + ':' + String(current.getSeconds()).padStart(2,0);
+        const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+    
       const response = axios
         .post("/feedback", {
           // const response = await axios.post('http://localhost:7777/app/feedback', {
@@ -81,6 +85,8 @@ const Feedback = () => {
           support: support,
           safety: safety,
           otherSuggestion: otherSuggestion,
+          date:`${time} - ${date}`,
+          station:searchParams.get("station"),
         })
         .then(function (response) {
           console.log(response);
