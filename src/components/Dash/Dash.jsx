@@ -61,7 +61,7 @@ const navigate = useNavigate();
                         <div>
             <div>
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body p-5 passenger">
-                    <a href="https://safe-cove-64331.herokuapp.com/app/getfeedback/download">
+                    <a href="http://35.72.7.143:8000/app/getfeedback/download">
                         <button onClick={down()} type="button" class="btn btn-primary passenger-button">Download the excel</button>
                     </a>
 
