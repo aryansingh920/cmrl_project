@@ -70,7 +70,7 @@ app.use("/app", routes)
 // });
 
 
-const port = process.env.PORT || 7777;
+const port = process.env.PORT || 8000;
 app.listen(port, async (req, res) => {
   console.log("server is running on port " + port);
 });
