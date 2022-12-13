@@ -1,0 +1,4 @@
+_id,username,gender,mobile,empStatus,age,duration,distance,commute,cleanliness,support,safety,otherSuggestion,_v
+630bb3dd5fc534deed09c363,Aru,male,68,Private,More than 60,More than 4 years,Less than 1 km,Bus,Diagree,Signages,No,.............,
+630bb42c5fc534deed09c365,jg,female,86798090,Private,40 to 50,1 to 2 years,8 to 12 kms,By Walk,Agree,Signages,No,.............,
+630bb6ee5fc534deed09c368,ihbk,male,789,IT,More than 60,More than 4 years,1 to 4 kms,Car,Strongly Agree,Parking,No,..............,
