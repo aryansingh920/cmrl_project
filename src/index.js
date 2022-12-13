@@ -9,8 +9,8 @@ import { Provider } from 'react-redux'
 import axios from 'axios';
 
 
-// axios.defaults.baseURL = "http://localhost:7777/app";
-axios.defaults.baseURL = "https://safe-cove-64331.herokuapp.com/app";
+axios.defaults.baseURL = "http://localhost:8000/app";
+// axios.defaults.baseURL = "https://safe-cove-64331.herokuapp.com/app";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
