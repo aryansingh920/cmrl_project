@@ -5,7 +5,7 @@ import CaptchaC from '../CaptchaC'
 import Button from '@mui/material/Button'
 
 const Card = (props) => {
-    console.log(props)
+    // console.log(props)
     return (
         <div className='demo style-demo'>
             <div>

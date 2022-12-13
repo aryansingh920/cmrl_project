@@ -41,11 +41,11 @@ const Card2 = (props) => {
       })
       .then(function (response) {
         setData1(response.data);
-        console.log(response.data);
+        // console.log(response.data);
         return response;
       })
       .catch(function (error) {
-        console.log(error);
+        // console.log(error);
         return error;
       });
     }else{
