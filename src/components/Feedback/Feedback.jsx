@@ -662,6 +662,14 @@ const Feedback = () => {
                     }}
                   />
                   <label>Female</label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    onChange={(e) => {
+                      setgender("other");
+                    }}
+                  />
+                  <label>Other</label>
                 </div>
                 <div class="name bg-card">
                   <label className="b">Mobile Number</label>
@@ -679,17 +687,11 @@ const Feedback = () => {
                 {/* Questions */}
 
 
-
-
-
                 {searchParams.get("station")==="Airport" || searchParams.get("station")==="LIC" || searchParams.get("station")==="Guindy" ? qus2 : qus }
-
-
 
                 {/* Questions */}
 
-                
-                <div class="input bg-card">
+                <div class="bg-card">
                   <label className="b">
                     If no, Suggestion for improvement:
                   </label>
