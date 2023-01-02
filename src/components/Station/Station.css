@@ -7,6 +7,15 @@
   width:100%;
 }
 
+@media (min-width:300px) and (max-width: 700px){
+  .body { 
+    height: 340px; 
+    margin: 0px; 
+    padding: 0px;
+    width:max-content;
+  } 
+}
+
 .main{
 margin:10px;
 }
@@ -157,14 +166,28 @@ body {
   line-height:  1.42857143; 
   color:  #333;
   background: #DDE8FC;
+
 } 
+@media (min-width:300px) and (max-width: 700px){
+  .body { 
+    height: 340px; 
+    margin: 0px; 
+    padding: 0px;
+    width:max-content;
+  } 
+}
 }     
 
 body { 
   height: 340px; 
   margin: 0px; 
   padding: 0px;
+  background-color: #DDE8FC;
+  
+  /* width:max-content; */
+
 } 
+
 
 @media all{ 
 html { 

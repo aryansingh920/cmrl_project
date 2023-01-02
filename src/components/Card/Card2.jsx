@@ -123,7 +123,7 @@ const Card2 = (props) => {
                 />
                 </div>
                 <button
-                  class="btn btn-outline-secondary send"
+                  class="btn btn-outline-secondary send resp-but"
                   type="button"
                   id="button-addon2"
                   onClick={() => {
@@ -133,7 +133,7 @@ const Card2 = (props) => {
                   Send OTP
                 </button>
                 <button
-                  class="btn btn-outline-secondary verify"
+                  class="btn btn-outline-secondary verify resp-but"
                   type="button"
                   id="button-addon2"
                   onClick={() => {

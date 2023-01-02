@@ -588,6 +588,11 @@ const Feedback = () => {
     ></input>
     <label>others</label>
   </div>
+  
+  <div className=" gender bg-card">
+    <label className="b">Image Upload (JPEG or PNG)</label>
+    <input type= "file" name="upload"/>
+  </div>
   <div class="gender bg-card">
     <label className="b">
       Do you feel Metro is a safe Transport
@@ -618,8 +623,6 @@ const Feedback = () => {
   const qus2 = (
     <div>{qus}{qus}</div>
   )
-
-
 
 
   return (
@@ -671,7 +674,7 @@ const Feedback = () => {
                   />
                   <label>Other</label>
                 </div>
-                <div class="name bg-card">
+                <div class="gender name bg-card">
                   <label className="b">Mobile Number</label>
                   <input
                     onChange={(e) => {
@@ -681,6 +684,8 @@ const Feedback = () => {
                     type="numeric"
                     placeholder="Enter Mobile number"
                   ></input>
+                  <label className="b">Email</label>
+                  <input type="email" placeholder="Enter Email Id"></input>
                 </div>
 
 

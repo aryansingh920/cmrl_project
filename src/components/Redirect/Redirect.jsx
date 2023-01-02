@@ -26,12 +26,12 @@ const navigate = useNavigate();
             <div id="main">
                 <div className="container p-3">
                     <div className="row">
-                        <div className="col-lg-6 mt-5">
+                        <div className="col-lg-6 mt-5 card-1st">
                             <CardPassenger text={"Passenger Feedback"}/>
                         </div>
-                        <div className="col-lg-6 mt-5">
+                        {/* <div className="col-lg-6 mt-5 card-2nd">
                             <CardStudent text={"Training session feedback"}/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

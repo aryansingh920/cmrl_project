@@ -46,6 +46,7 @@
 .send{
     /* background: aliceblue; */
     margin-right: 6rem;
+    
 }
 .verify{
     background-color: aliceblue;
@@ -61,3 +62,23 @@
     font-size: inherit;
     line-height: inherit;
 } */
+
+
+@media (min-width:300px) and (max-width:700px) {
+    .resp-but{
+        margin-top:30px;
+        
+        
+    }
+    .send{
+        /* background: aliceblue; */
+        margin-right: 6rem;
+        margin-left: 50px
+    }
+    .verify{
+        background-color: aliceblue;
+        margin-right:-3rem;
+        
+        
+    }
+}

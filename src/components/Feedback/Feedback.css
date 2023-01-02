@@ -3,12 +3,21 @@
     width:100%; */
     /* margin-bottom: 10rem; */
 }
+
+/* .mobile::click{
+    border:none;
+} */
 .uk-card{
     /* background-color: #DDE8FC; */
     background-color: white;
 }
+
+.img-upload{
+    background-color: #1976d2;
+}
 .form{
     background-color:#DDE8FC ;
+
 }
 .feedback{
     margin-left: 3rem;
@@ -76,4 +85,21 @@ input[type="radio"] {
 
 .uk-card-title{
     font-size:2.5rem;
+}
+
+
+@media (min-width:300px) and (max-width:700px) {
+    .form{
+        background-color:#DDE8FC ;
+        width: fit-content;   
+    }
+    .main-container{
+        width: fit-content;
+        background-color: #DDE8FC;
+    }
+    .submit button{
+        margin-top: 3rem;
+        margin-bottom:3rem;
+        margin-left: 0px;;
+    }
 }

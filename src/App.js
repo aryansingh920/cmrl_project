@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
+import Mob_Navbar from "./components/mob_navbar/Mob_Navbar";
+import Mob_Footer from "./components/mob_footer/Mob_Footer";
 import Home from "./components/Home/Home";
 import HomeAdmin from "./components/HomeAdmin/HomeAdmin";
 import Redirect from "./components/Redirect/Redirect";
@@ -21,11 +23,6 @@ import ThankYou from "./components/ThankYou/ThankYou";
 import { useCookies } from 'react-cookie';
 
 
-
-
-
-
-
 const App = () => {
 
 
@@ -34,6 +31,7 @@ const App = () => {
 
 {      <HashRouter >
   <Navbar />
+  {/* <Mob_Navbar /> */}
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -46,8 +44,8 @@ const App = () => {
           <Route path="/admin" element={<Dash />} />
           <Route path="/homeadmin/admin" element={<HomeAdmin />} />
         </Routes>
-      <Footer />
-
+    <Footer />
+    {/* <Mob_Footer /> */}
       </HashRouter>}
       {/* <Dash /> */}
     </div>

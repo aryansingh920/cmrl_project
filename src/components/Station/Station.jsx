@@ -34,7 +34,7 @@ const Station = () => {
                     - Select -
                 </option>
                 <option value="General"> 
-                    General
+                    GENERAL
                 </option>
                 <option value="AG - DMS">
                     AG - DMS
