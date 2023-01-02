@@ -70,9 +70,9 @@ const navigate = useNavigate();
         </div>
 
                         </div>
-                        <div className="col-lg-6 mt-5">
+                        {/* <div className="col-lg-6 mt-5">
                             <CardStudent disabled={true}/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

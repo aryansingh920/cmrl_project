@@ -48,22 +48,23 @@ const Feedback = () => {
 
   const call = async () => {
     // console.log("here")
-    if (
-      name !== "" &&
-      gender !== "" &&
-      mobile !== "" &&
-      emps !== "" &&
-      age !== "" &&
-      duration !== "" &&
-      distance !== "" &&
-      commute !== "" &&
-      service !== "" &&
-      cleanliness !== "" &&
-      support !== "" &&
-      cleanliness !== "" &&
-      support !== "" &&
-      safety !== ""
-    ) {
+    // if (
+    //   name !== "" &&
+    //   gender !== "" &&
+    //   mobile !== "" &&
+    //   emps !== "" &&
+    //   age !== "" &&
+    //   duration !== "" &&
+    //   distance !== "" &&
+    //   commute !== "" &&
+    //   service !== "" &&
+    //   cleanliness !== "" &&
+    //   support !== "" &&
+    //   cleanliness !== "" &&
+    //   support !== "" &&
+    //   safety !== ""
+    // ) 
+    {
         // console.log("gu")
         const current = new Date()
         const time = String(current.getHours()).padStart(2,0) + ':' + String(current.getMinutes()).padStart(2,0) + ':' + String(current.getSeconds()).padStart(2,0);
@@ -103,13 +104,13 @@ const Feedback = () => {
 
       console.log(response);
     }
-    else{
-        // console.log("hu")
+    // else{
+    //     // console.log("hu")
 
-        setMessage("Enter all Fields")
-        window.scrollTo(0, 0)
-        // console.log("Enter all fields")
-    }
+    //     setMessage("Enter all Fields")
+    //     window.scrollTo(0, 0)
+    //     // console.log("Enter all fields")
+    // }
   };
 
 
