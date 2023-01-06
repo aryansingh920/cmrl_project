@@ -11,7 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aternus/csv-to-xlsx": "^2.0.3",
+    "aspose.cells": "^22.12.0",
     "axios": "^0.27.2",
+    "convertapi": "^1.11.2",
+    "convertapi-js": "^1.0.8",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "csv-converter-to-pdf-and-html": "^1.0.2",
