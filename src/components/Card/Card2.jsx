@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 // import './Cards.css'
 // import './Cards1.css'
@@ -9,17 +9,14 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 // import navigateHome from "../../App.js";
 // import { createHashHistory } from 'history'
-import { useCookies } from 'react-cookie';
+import { useCookies } from "react-cookie";
 import * as EmailValidator from "email-validator";
 
-
-
-
-const Card2 = (props) => {
-  const [cookies, setCookie] = useCookies(['name']);
+const Card2 = props => {
+  const [cookies, setCookie] = useCookies(["name"]);
   const navigate = useNavigate();
   const navigateHome = () => {
-    navigate('/station');
+    navigate("/station");
   };
   // const history = createHashHistory();
   const [email, setemail] = useState("");
@@ -27,30 +24,28 @@ const Card2 = (props) => {
   const [otp, setotp] = useState("");
   const [data1, setData1] = useState("");
   const [msg, setmsg] = useState(false);
-  const [otpMsg,setOtpMsg] = useState(true);
-  const [err,setErr] = useState(false);
-
-
-
+  const [otpMsg, setOtpMsg] = useState(true);
+  const [err, setErr] = useState(false);
+  const [btn, setBtn] = useState(false);
   const call = async () => {
-    if(EmailValidator.validate(email)){
-    setmsg(true);
-    const response = await axios
-      .post("/verify", {
-        email: `${email}`,
-      })
-      .then(function (response) {
-        setData1(response.data);
-        // console.log(response.data);
-        return response;
-      })
-      .catch(function (error) {
-        // console.log(error);
-        return error;
-      });
-    }else{
-      console.log("invalid email")
-      await setErr(true)
+    if (EmailValidator.validate(email)) {
+      setmsg(true);
+      const response = await axios
+        .post("/verify", {
+          email: `${email}`
+        })
+        .then(function(response) {
+          setData1(response.data);
+          // console.log(response.data);
+          return response;
+        })
+        .catch(function(error) {
+          // console.log(error);
+          return error;
+        });
+    } else {
+      console.log("invalid email");
+      setErr(true);
     }
   };
 
@@ -66,8 +61,7 @@ const Card2 = (props) => {
       if (otp === result) {
         // console.log("success");
         setOtpMsg(false);
-        setCookie('logged_in', "true", { path: '/' });
-
+        setCookie("logged_in", "true", { path: "/", maxAge: 3600 });
       } else {
         // console.log("failure");
         setOtpMsg(true);
@@ -76,19 +70,89 @@ const Card2 = (props) => {
   }
   return (
     <div className="demo style-demo">
+      <div
+        className="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="staticBackdropLabel">
+                OTP has been sent
+              </h1>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              <input
+                required
+                type="text"
+                className="form-control"
+                placeholder="Enter OTP"
+                aria-label=""
+                aria-describedby="button-addon2"
+                onChange={e => {
+                  setotp(e.target.value);
+                }}
+              />
+            </div>
+            <div className="modal-footer">
+              {/* <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>*/}
+
+              <button
+                onClick={() => {
+                  verify_otp();
+                }}
+                type="button"
+                className="btn btn-primary"
+              >
+                Verify Otp
+              </button>
+              <Button
+                data-bs-dismiss="modal"
+                onClick={navigateHome}
+                disabled={otpMsg}
+                variant="contained"
+              >
+                Submit
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div>
         <div className="uk-card uk-card-default uk-card-hover uk-card-body p-5">
-        <h2>User</h2>
+          <h2>User</h2>
           {/*<h3 className="uk-card-title">Enter Email</h3>*/}
           {/* form page */}
           <form>
-            <div class=" justify-content-center">
-              <label class="email-main">User Email</label>
+            <div className=" justify-content-center">
+              <label className="email-main">User Email</label>
               <input
-                onChange={(e) => {
+                onChange={e => {
                   setemail(e.target.value);
+                  if (EmailValidator.validate(email)) {
+                    setBtn(true);
+                  } else {
+                    setBtn(false);
+                  }
                 }}
-                class="email-main2"
+                className="email-main2"
                 type="email"
                 placeholder="enter email"
               ></input>
@@ -98,42 +162,55 @@ const Card2 = (props) => {
                 onChange={(e) => {
                   setpassword(e.target.value);
                 }}
-                class="password"
+                className="password"
                 type="password"
                 placeholder="Password"
               ></input>{" "} */}
               <br />
-              {msg && <p className="m-0 p-0" style={{ color: "green" }}>OTP has been sent</p>}
-              {err && <p className="m-0 p-0" style={{ color: "red" }}>Invalid Email</p>}
+              {msg && (
+                <p className="m-0 p-0" style={{ color: "green" }}>
+                  OTP has been sent
+                </p>
+              )}
+              {err && (
+                <p className="m-0 p-0" style={{ color: "red" }}>
+                  Invalid Email
+                </p>
+              )}
               <br />
               <div
                 style={{ width: "45%", left: "34%", marginTop: "6px" }}
-                class="input-group d-flex justify-content-center"
+                className="input-group d-flex justify-content-center"
               >
-              <div class="otp">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter OTP"
-                  aria-label=""
-                  aria-describedby="button-addon2"
-                  onChange={(e) => {
-                    setotp(e.target.value);
-                  }}
-                />
+                <div className="otp">
+                  {/*<input
+                    type="text"
+                    className="form-control"
+                    placeholder="Enter OTP"
+                    aria-label=""
+                    aria-describedby="button-addon2"
+                    onChange={e => {
+                      setotp(e.target.value);
+                    }}
+                  />*/}
                 </div>
-                <button
-                  class="btn btn-outline-secondary send resp-but"
-                  type="button"
-                  id="button-addon2"
-                  onClick={() => {
-                    call();
-                  }}
-                >
-                  Send OTP
-                </button>
-                <button
-                  class="btn btn-outline-secondary verify resp-but"
+                {btn && (
+                  <button
+                    className="btn btn-outline-secondary send resp-but"
+                    type="button"
+                    id="button-addon2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    onClick={() => {
+                      call();
+                    }}
+                  >
+                    Send OTP
+                  </button>
+                )}
+
+                {/*                <button
+                  className="btn btn-outline-secondary verify resp-but"
                   type="button"
                   id="button-addon2"
                   onClick={() => {
@@ -141,19 +218,18 @@ const Card2 = (props) => {
                   }}
                 >
                   Verify OTP
-                </button>
+                </button>*/}
               </div>{" "}
               <br />
               <div className="submit">
-                <Button
+                {/*                <Button
                   onClick={navigateHome}
                   disabled={otpMsg}
                   variant="contained"
                 >
                   Submit
-                </Button>
+              </Button>*/}
               </div>
-              
             </div>
           </form>
           {/* <CaptchaC/> */}
