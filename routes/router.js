@@ -14,6 +14,7 @@ router
   })
   .get("/getfeedback/download/pdf", middleware.pdfConverter)
   .get("/getfeedback/download/xlsx", middleware.pdfConverter)
-  .post("/admin", middleware.adminAuth);
+  .post("/admin", middleware.adminAuth)
+  .get("/image/compress", middleware.imageCompress);
 
 module.exports = router;

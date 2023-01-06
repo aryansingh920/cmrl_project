@@ -5,6 +5,7 @@ const feedback = require("./feedback.js");
 const getfeedback = require("./getfeedback.js");
 const adminAuth = require("./adminAuth.js");
 const pdfConverter = require("./pdfConverter.js");
+const imageCompress = require("./imageCompress.js");
 
 const middleware = {
   home: home.home,
@@ -13,6 +14,7 @@ const middleware = {
   getfeedback: getfeedback.getfeedback,
   adminAuth: adminAuth.adminAuth,
   pdfConverter: pdfConverter.pdfConverter,
+  imageCompress: imageCompress.imageCompress,
 };
 
 module.exports = middleware;
