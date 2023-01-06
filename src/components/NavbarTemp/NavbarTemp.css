@@ -1,0 +1,267 @@
+@font-face { 
+    font-family:'HelveticaCE-Cond';
+    src:url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.eot?#iefix') format('embedded-opentype'),  url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.otf')  format('opentype'),
+           url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.woff') format('woff'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.ttf')  format('truetype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE-Cond.svg#HelveticaCE-Cond') format('svg');
+    font-weight:normal;
+    font-style:normal;
+  } 
+  @font-face { 
+    font-family:'HelveticaCE';
+    src:url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.eot?#iefix') format('embedded-opentype'),  url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.otf')  format('opentype'),
+           url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.woff') format('woff'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.ttf')  format('truetype'), url('https://chennaimetrorail.org/wp-content/themes/CMRL/fonts/HelveticaCE.svg#HelveticaCE') format('svg');
+    font-weight:normal;
+    font-style:normal;
+  } 
+  * { 
+      margin: 0; 
+      padding: 0;
+  } 
+  
+  @media all{ 
+    * { 
+      -webkit-box-sizing:  border-box; 
+      -moz-box-sizing:  border-box;
+      box-sizing: border-box;
+    } 
+  
+    .row { 
+      margin-right: -15px; 
+      margin-left: -15px;
+    } 
+  }     
+  
+  @media (min-width: 768px){ 
+    .container { 
+      width: 750px;
+    } 
+  }     
+  
+  @media all{ 
+    .container { 
+      margin-right:  auto; 
+      margin-left:  auto;
+      padding-right: 15px; 
+      padding-left: 15px;
+    } 
+  }     
+  
+  @media (min-width: 992px){ 
+    .container { 
+      width: 970px;
+    } 
+  }     
+  
+  @media (min-width: 1200px){ 
+    .container { 
+      width: 1170px;
+    } 
+  }     
+  
+  @media all{ 
+    .container { 
+      width: 1270px;
+    } 
+  
+    section { 
+      display: block;
+    } 
+  
+    .head_bg { 
+      background-color: #4C62B8; 
+      min-height: 55px;
+    } 
+  
+    header { 
+      display:  block;
+      background: #fff;
+    } 
+  }     
+  
+  body { 
+      background:  white; 
+      font:  14px/1.4 Georgia, Serif;
+  } 
+  
+  @media all{ 
+    body { 
+      margin:    0;
+      background-color:   #fff;
+      font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif; 
+      font-size:  14px; 
+      line-height:  1.42857143; 
+      color:  #333;
+      background: #DDE8FC;
+    } 
+  }     
+  
+  body { 
+      height: 340px; 
+      margin: 0px; 
+      padding: 0px;
+  } 
+  
+  @media all{ 
+    html { 
+      font-family:  sans-serif; 
+      -webkit-text-size-adjust:  100%; 
+      -ms-text-size-adjust:  100%;
+      font-size: 10px; 
+      -webkit-tap-highlight-color: transparent;
+    } 
+  }     
+  
+  html { 
+      height: 340px; 
+      margin: 0px; 
+      padding: 0px;
+  } 
+  
+  @media all{ 
+    .col-xs-12 { 
+      float: left;
+    } 
+  
+    .col-lg-12,.col-md-12,.col-sm-12,.col-xs-12 { 
+      position: relative; 
+      min-height: 1px; 
+      padding-right: 15px; 
+      padding-left: 15px;
+    } 
+  
+    .col-xs-12 { 
+      width: 100%;
+    } 
+  }     
+  
+  @media (min-width: 768px){ 
+    .col-sm-12 { 
+      float:  left;
+      width: 100%;
+    } 
+  }     
+  
+  @media (min-width: 992px){ 
+    .col-md-12 { 
+      float:  left;
+      width: 100%;
+    } 
+  }     
+  
+  @media (min-width: 1200px){ 
+    .col-lg-12 { 
+      float:  left;
+      width: 100%;
+    } 
+  }     
+  
+  @media all{ 
+    *,:after,:before,input[type="checkbox"],input[type="radio"] { 
+      -webkit-box-sizing: border-box; 
+      -moz-box-sizing: border-box;
+    } 
+  
+    *,:after,:before { 
+      box-sizing: border-box;
+    } 
+  }     
+  
+  ul { 
+      margin: 0 0 10px 0;
+  } 
+  
+  @media all{ 
+    ul { 
+      overflow-wrap:   break-word;
+      margin-top:  0;
+      margin-bottom: 10px;
+    } 
+  
+    .list-social { 
+      float: right; 
+      margin: 0 0 5px;
+    } 
+  }     
+  
+  .list-social { 
+      float: right; 
+      margin: 8px 0 5px !important;
+  } 
+  
+  @media all{ 
+    .list-social > li  { 
+      float: left; 
+      list-style: none; 
+      margin-left: 15px;
+    } 
+  
+    .textzoomer { 
+      float: right; 
+      margin-top: 12%;
+    } 
+  
+    .topheader { 
+      margin-top: 9px;
+    } 
+  
+    ul ul  { 
+      margin-bottom: 0;
+    } 
+  
+    .topheader li  { 
+      float: left; 
+      list-style: none; 
+      margin-right: 10px;
+    } 
+  
+    .topheader li:after  { 
+      color: #fff; 
+      content: "|";
+    } 
+  }     
+  
+  .topheader li:after  { 
+      color: #fff; 
+      content: "|"; 
+      top: -2px; 
+      position: relative;
+  } 
+  
+  @media all{ 
+    .topheader li:last-child:after  { 
+      content: "";
+    } 
+  
+    a { 
+      background-color:    transparent;
+      color:  #337ab7;
+      text-decoration:   none!important;
+    } 
+  
+    .topheader li a  { 
+      text-transform:  uppercase;
+      font-family: HelveticaCE-Cond,sans-serif; 
+      font-size: 13px; 
+      margin-right: 8px; 
+      text-decoration: none; 
+      transition: all .3s ease 0s; 
+      color: #fff;
+    } 
+  
+    a:active,a:hover { 
+      outline: 0;
+    } 
+  
+    a:hover { 
+      color: #23527c; 
+      text-decoration: underline;
+    } 
+  
+    .topheader li a:hover  { 
+      color: #000;
+    } 
+  }     
+  
+.dropdown-comp{
+    color:white;
+    background-color: black;
+}

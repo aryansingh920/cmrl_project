@@ -17,6 +17,7 @@ const Feedback = () => {
   const navigate = useNavigate();
   const [name, setname] = useState("");
   const [gender, setgender] = useState("");
+  const [email, setemail] = useState("");
   const [mobile, setmobile] = useState("");
   const [emps, setemps] = useState("");
   const [age, setage] = useState("");
@@ -48,7 +49,8 @@ const Feedback = () => {
 
   const call = async () => {
     // console.log("here")
-    // if (
+    if (
+      email !== ""
     //   name !== "" &&
     //   gender !== "" &&
     //   mobile !== "" &&
@@ -63,7 +65,7 @@ const Feedback = () => {
     //   cleanliness !== "" &&
     //   support !== "" &&
     //   safety !== ""
-    // ) 
+    ) 
     {
         // console.log("gu")
         const current = new Date()
@@ -76,6 +78,7 @@ const Feedback = () => {
           username: name,
           gender: gender,
           mobile: mobile,
+          email:email,
           empStatus: emps,
           age: age,
           duration: duration,
@@ -104,13 +107,13 @@ const Feedback = () => {
 
       console.log(response);
     }
-    // else{
-    //     // console.log("hu")
+    else{
+        // console.log("hu")
 
-    //     setMessage("Enter all Fields")
-    //     window.scrollTo(0, 0)
-    //     // console.log("Enter all fields")
-    // }
+        setMessage("Enter Email id")
+        window.scrollTo(0, 0)
+        // console.log("Enter all fields")
+    }
   };
 
 
@@ -686,7 +689,9 @@ const Feedback = () => {
                     placeholder="Enter Mobile number"
                   ></input>
                   <label className="b">Email</label>
-                  <input type="email" placeholder="Enter Email Id"></input>
+                  <input  onChange={(e) => {
+                      setemail(e.target.value);
+                    }} type="email"name="email" placeholder="Enter Email Id"></input>
                 </div>
 
 
@@ -697,17 +702,17 @@ const Feedback = () => {
 
                 {/* Questions */}
 
-                <div class="bg-card">
+                <div class="name bg-card">
                   <label className="b">
                     If no, Suggestion for improvement:
-                  </label>
+                  </label><br/>
                   <textarea
                     onChange={(e) => {
                       setotherSuggestion(e.target.value);
                     }}
                     type="textarea"
                     class="size suggestion"
-                    placeholder="Other suggestions if any..."
+                    
                   />
                 </div>
                 <div className="submit">

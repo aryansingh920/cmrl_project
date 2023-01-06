@@ -19,7 +19,7 @@ const Card2 = (props) => {
   const [cookies, setCookie] = useCookies(['name']);
   const navigate = useNavigate();
   const navigateHome = () => {
-    navigate('/redirect');
+    navigate('/station');
   };
   // const history = createHashHistory();
   const [email, setemail] = useState("");

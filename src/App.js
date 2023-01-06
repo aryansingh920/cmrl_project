@@ -21,6 +21,7 @@ import { BrowserRouter, Routes, Route,HashRouter  } from "react-router-dom";
 import axios from "axios";
 import ThankYou from "./components/ThankYou/ThankYou";
 import { useCookies } from 'react-cookie';
+import NavbarTemp from "./components/NavbarTemp/NavbarTemp";
 
 
 const App = () => {
@@ -30,11 +31,12 @@ const App = () => {
     <div>
 
 {      <HashRouter >
-  <Navbar />
+  {/* <Navbar /> */}
   {/* <Mob_Navbar /> */}
-
+        {/* <NavbarTemp /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<NavbarTemp />} />
+          <Route path="/home" element={<Home />} />
           <Route path="redirect" element={<Redirect />} />
           <Route path="station" element={<Station />} />
           <Route path="feedback" element={<Feedback />} />
@@ -44,7 +46,7 @@ const App = () => {
           <Route path="/admin" element={<Dash />} />
           <Route path="/homeadmin/admin" element={<HomeAdmin />} />
         </Routes>
-    <Footer />
+    {/* <Footer /> */}
     {/* <Mob_Footer /> */}
       </HashRouter>}
       {/* <Dash /> */}

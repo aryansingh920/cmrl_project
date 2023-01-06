@@ -9,7 +9,7 @@
 } */
 .uk-card{
     /* background-color: #DDE8FC; */
-    background-color: white;
+    background-color: rgb(31, 22, 22);
 }
 
 .img-upload{
@@ -55,6 +55,7 @@
 .submit button{
     margin-top: 3rem;
     margin-bottom:3rem;
+    margin-left:auto;
 }
 
 .b{
@@ -76,11 +77,15 @@ input[type="radio"] {
     height:200px;
 }
 
+
 .button-submit-feedback{
     background-color: #1976d2;
-    width: 80px;
+    margin-left:90px;
+    /* width: 80px;
     height: 30px;
-    margin-left: -1150px;
+   */
+  
+ 
 }
 
 .uk-card-title{
@@ -100,6 +105,6 @@ input[type="radio"] {
     .submit button{
         margin-top: 3rem;
         margin-bottom:3rem;
-        margin-left: 0px;;
+        margin-left: 0px;
     }
 }

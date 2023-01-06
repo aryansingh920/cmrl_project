@@ -163,6 +163,7 @@ const Station = () => {
             <Link to={`/feedback?station=${stations}`}>
                 <Button variant="contained">Submit</Button>
             </Link>
+            <p class="disclaimer">“This form is purely for the purpose of survey and study , for complaints, Feedback/Grievances please contact chennaimetrorail@cmrl.in</p>
         </div>
     )
 }

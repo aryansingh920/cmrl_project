@@ -4,6 +4,7 @@ import Card from '../Card/Card'
 import Card1 from '../Card/Card1'
 import Card2 from '../Card/Card2'
 
+
 const Home = (props) => {
     const [myBool, setmyBool] = useState(true);
 

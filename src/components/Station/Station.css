@@ -290,3 +290,8 @@ option {
   margin: 0 5px;
 } 
 }
+
+.disclaimer{
+  color:red;
+  font-size: x-small;
+}
