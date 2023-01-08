@@ -149,9 +149,9 @@ const Card2 = props => {
                   setemail(e.target.value);
                   if (EmailValidator.validate(email)) {
                     setEbtn(false);}
-                  // } else {
-                  //   setBtn(false);
-                  // }
+                   else {
+                    setEbtn(true);
+                  }
                 }}
                 className="email-main2"
                 type="email"
