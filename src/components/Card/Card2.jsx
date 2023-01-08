@@ -26,7 +26,8 @@ const Card2 = props => {
   const [msg, setmsg] = useState(false);
   const [otpMsg, setOtpMsg] = useState(true);
   const [err, setErr] = useState(false);
-  const [btn, setBtn] = useState(false);
+  const [btn, setBtn] = useState(true);
+  const [ebtn, setEbtn] = useState(true);
   const call = async () => {
     if (EmailValidator.validate(email)) {
       setmsg(true);
@@ -147,7 +148,7 @@ const Card2 = props => {
                 onChange={e => {
                   setemail(e.target.value);
                   if (EmailValidator.validate(email)) {
-                    setBtn(true);}
+                    setEbtn(false);}
                   // } else {
                   //   setBtn(false);
                   // }
@@ -197,6 +198,7 @@ const Card2 = props => {
                 {btn && (
                   <button
                     className="btn btn-outline-secondary send resp-but"
+                    disabled={ebtn}
                     type="button"
                     id="button-addon2"
                     data-bs-toggle="modal"

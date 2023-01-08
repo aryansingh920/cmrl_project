@@ -122,6 +122,7 @@ const Feedback = () => {
     <div class="gender bg-card">
     <label className="b">Employment Status</label>
     <br />
+  
     <input
       onChange={(e) => {
         setemps("Government");
@@ -131,6 +132,7 @@ const Feedback = () => {
       name="emp"
     ></input>
     <label>Government</label>
+
     <input
       onChange={(e) => {
         setemps("Private");
@@ -149,12 +151,13 @@ const Feedback = () => {
       name="emp"
     ></input>
     <label>IT</label>
+  {/* EXP */}
     <input
       onChange={(e) => {
         setemps("Business");
       }}
       type="radio"
-      class="size"
+      class="size "
       name="emp"
     ></input>
     <label>Business</label>
@@ -166,6 +169,7 @@ const Feedback = () => {
       class="size"
       name="emp"
     ></input>
+    
     <label>Student</label>
     <input
       onChange={(e) => {
@@ -177,6 +181,8 @@ const Feedback = () => {
     ></input>
     <label>Others</label>
     <br />
+    
+  
   </div>
   <div class="gender bg-card">
     <label className="b">Age Group(in Yrs)</label>
