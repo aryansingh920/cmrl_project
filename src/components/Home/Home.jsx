@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
 import Card from '../Card/Card'
-import Card1 from '../Card/Card1'
+// import Card1 from '../Card/Card1'
 import Card2 from '../Card/Card2'
 
 
@@ -17,13 +17,13 @@ const Home = (props) => {
             <div id="main">
                 <div className="container p-3">
                     <div className="row">
-                        <div className="col-sm-6 mt-5">
-                            <Card1 />
+                        <div className="col-lg-6 mt-5" >
+                            <Card2 />
                         </div>
-                        <div className="col-sm-6 mt-5">
+                        {/* <div className="col-sm-6 mt-5">
                             {myBool ? <Card2 /> : <Card/>}
-                            {/* <Card2 /> */}
-                        </div>
+                            <Card2 />
+                        </div> */}
                     </div>
                 </div>
             </div>

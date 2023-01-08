@@ -1,6 +1,23 @@
 .cred{
     margin-bottom: 25px
 }
+.clr{
+    background-color: rgb(222, 236, 243,0.8);
+    border-color: rgb(0, 0, 0);
+    
+}
+
+
+.size{
+    margin-left:-260px;
+    
+}
+.first{
+    background-color: rgb(19, 82, 193);
+}
+.cardcenter{
+    margin-right: -100px;  
+}
 
 .email, .password, .captcha{
     margin:6px;
@@ -54,7 +71,6 @@
     
     
 }
-
 
 /* .button, .input, .optgroup, .select, .textarea {
     margin: 14px;

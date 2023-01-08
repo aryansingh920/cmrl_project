@@ -80,9 +80,9 @@ const Card2 = props => {
         aria-hidden="true"
       >
         <div className="modal-dialog">
-          <div className="modal-content">
+          <div className="modal-content clr">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="staticBackdropLabel">
+              <h1 className="modal-title fs-3 fw-bold" id="staticBackdropLabel">
                 OTP has been sent
               </h1>
               <button
@@ -96,7 +96,7 @@ const Card2 = props => {
               <input
                 required
                 type="text"
-                className="form-control"
+                className="form-control size"
                 placeholder="Enter OTP"
                 aria-label=""
                 aria-describedby="button-addon2"
@@ -119,7 +119,7 @@ const Card2 = props => {
                   verify_otp();
                 }}
                 type="button"
-                className="btn btn-primary"
+                className="btn btn-primary first"
               >
                 Verify Otp
               </button>
@@ -135,8 +135,8 @@ const Card2 = props => {
           </div>
         </div>
       </div>
-      <div>
-        <div className="uk-card uk-card-default uk-card-hover uk-card-body p-5">
+      <div >
+        <div className="uk-card uk-card-default uk-card-hover uk-card-body p-5 cardcenter">
           <h2>User</h2>
           {/*<h3 className="uk-card-title">Enter Email</h3>*/}
           {/* form page */}
@@ -147,10 +147,10 @@ const Card2 = props => {
                 onChange={e => {
                   setemail(e.target.value);
                   if (EmailValidator.validate(email)) {
-                    setBtn(true);
-                  } else {
-                    setBtn(false);
-                  }
+                    setBtn(true);}
+                  // } else {
+                  //   setBtn(false);
+                  // }
                 }}
                 className="email-main2"
                 type="email"
